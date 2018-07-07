@@ -13,6 +13,8 @@
 		9A89323120ED96DC00F1BA64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A89323020ED96DC00F1BA64 /* Assets.xcassets */; };
 		9A89323420ED96DC00F1BA64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A89323220ED96DC00F1BA64 /* LaunchScreen.storyboard */; };
 		9AD2328B20ED9D7800CF5EE6 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD2328A20ED9D7800CF5EE6 /* CategoryCell.swift */; };
+		9AD2328D20EEE34000CF5EE6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD2328C20EEE34000CF5EE6 /* Category.swift */; };
+		9AD2329020EEE50E00CF5EE6 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD2328F20EEE50E00CF5EE6 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9A89323320ED96DC00F1BA64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A89323520ED96DC00F1BA64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AD2328A20ED9D7800CF5EE6 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		9AD2328C20EEE34000CF5EE6 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		9AD2328F20EEE50E00CF5EE6 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		9A89322820ED96DB00F1BA64 /* coder.swag */ = {
 			isa = PBXGroup;
 			children = (
+				9AD2328E20EEE4FC00CF5EE6 /* Services */,
 				9AD2328920ED9CF500CF5EE6 /* View */,
 				9AD2328820ED9CEC00CF5EE6 /* Model */,
 				9AD2328720ED9CE200CF5EE6 /* Controller */,
@@ -79,6 +84,7 @@
 		9AD2328820ED9CEC00CF5EE6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9AD2328C20EEE34000CF5EE6 /* Category.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,6 +95,14 @@
 				9AD2328A20ED9D7800CF5EE6 /* CategoryCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		9AD2328E20EEE4FC00CF5EE6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9AD2328F20EEE50E00CF5EE6 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +179,8 @@
 				9A89322C20ED96DB00F1BA64 /* CategoriesVC.swift in Sources */,
 				9A89322A20ED96DB00F1BA64 /* AppDelegate.swift in Sources */,
 				9AD2328B20ED9D7800CF5EE6 /* CategoryCell.swift in Sources */,
+				9AD2328D20EEE34000CF5EE6 /* Category.swift in Sources */,
+				9AD2329020EEE50E00CF5EE6 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

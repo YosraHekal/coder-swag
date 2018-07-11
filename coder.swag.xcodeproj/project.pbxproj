@@ -13,6 +13,8 @@
 		9A89322F20ED96DB00F1BA64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A89322D20ED96DB00F1BA64 /* Main.storyboard */; };
 		9A89323120ED96DC00F1BA64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A89323020ED96DC00F1BA64 /* Assets.xcassets */; };
 		9A89323420ED96DC00F1BA64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A89323220ED96DC00F1BA64 /* LaunchScreen.storyboard */; };
+		9AA5A96920F268CA0056FD63 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5A96820F268CA0056FD63 /* Product.swift */; };
+		9AA5A96B20F292070056FD63 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA5A96A20F292070056FD63 /* ProductsVC.swift */; };
 		9AD2328B20ED9D7800CF5EE6 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD2328A20ED9D7800CF5EE6 /* CategoryCell.swift */; };
 		9AD2328D20EEE34000CF5EE6 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD2328C20EEE34000CF5EE6 /* Category.swift */; };
 		9AD2329020EEE50E00CF5EE6 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD2328F20EEE50E00CF5EE6 /* DataService.swift */; };
@@ -27,6 +29,8 @@
 		9A89323020ED96DC00F1BA64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A89323320ED96DC00F1BA64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A89323520ED96DC00F1BA64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AA5A96820F268CA0056FD63 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		9AA5A96A20F292070056FD63 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 		9AD2328A20ED9D7800CF5EE6 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		9AD2328C20EEE34000CF5EE6 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		9AD2328F20EEE50E00CF5EE6 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				9A89322B20ED96DB00F1BA64 /* CategoriesVC.swift */,
+				9AA5A96A20F292070056FD63 /* ProductsVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				9AD2328C20EEE34000CF5EE6 /* Category.swift */,
+				9AA5A96820F268CA0056FD63 /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -179,12 +185,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AA5A96B20F292070056FD63 /* ProductsVC.swift in Sources */,
 				9A89322C20ED96DB00F1BA64 /* CategoriesVC.swift in Sources */,
 				9A89322A20ED96DB00F1BA64 /* AppDelegate.swift in Sources */,
 				9AD2328B20ED9D7800CF5EE6 /* CategoryCell.swift in Sources */,
 				9A43674920F1D445001EB061 /* ProductCell.swift in Sources */,
 				9AD2328D20EEE34000CF5EE6 /* Category.swift in Sources */,
 				9AD2329020EEE50E00CF5EE6 /* DataService.swift in Sources */,
+				9AA5A96920F268CA0056FD63 /* Product.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +335,7 @@
 		9A89323920ED96DC00F1BA64 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JS4CNY88J2;
@@ -346,6 +355,7 @@
 		9A89323A20ED96DC00F1BA64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JS4CNY88J2;

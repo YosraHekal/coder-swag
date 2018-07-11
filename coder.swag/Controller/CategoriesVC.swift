@@ -29,8 +29,6 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell") as? CategoryCell {
             
-            
-            print("")
          let category = DataService.instance.getCategories()[indexPath.row]
             cell.updateViews(category: category)
             return cell
@@ -39,5 +37,33 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
             return CategoryCell()
         }
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let category = DataService.instance.getCategories()[indexPath.row]
+        performSegue(withIdentifier: "ProductsVC", sender: category)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let productsVC = segue.destination as? ProductsVC {
+            
+            let barBtn = UIBarButtonItem()
+            barBtn.title = ""
+            navigationItem.backBarButtonItem = barBtn
+            
+            assert(sender as? Category != nil) //For developer mode only to debug, so if there's a problem we could know and solve it.
+            productsVC.initProdcuts(category: sender as! Category)
+        }
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
 
